@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Finde die Täter</title>
+    </head>
+    <body>
+        <h1>Gauner Trio</h1>
+        <h2>Welche drei Ganoven haben das Verbrechen begangen?</h2>
+        <p>Ein Augenzeuge hat drei Ganoven dabei beobachtet, wie sie ein Verbrechen begangen haben. Unter den Verdächtigen sind <strong>sieben</strong> Serientäter. Legen Sie dem Augenzeugen nacheinander Karten vor, die jeweils <strong>drei</strong> Verdächtige zeigen. Der Augenzeuge wird Ihnen dann mitteilen, wie viele der Täter er auf der Karte wieder erkennt. Wie viele Hinweise benötigen Sie, um die Halunken zu überführen?</p>
+        <div>
+            <table id="scoundrels">
+                <tr>
+                    <th>Verdächtiger</th>
+                    <th>schuldig</th>
+                    <th>unklar</th>
+                    <th>unschuldig</th>
+                </tr>
+            </table>
+            <ul id="scoundrels"></ul>
+            <p id="status">Klicken Sie auf <em>Anklagen</em>, sobald Sie die drei Schuldigen gefunden haben!</p>
+            <button id="new-game">Neues Spiel</button>
+            <button id="accuse">Anklagen</button>
+            <button id="next-card">Nächste Karte</button>
+        </div>
+        <div id="cards"></div>
+        <script src="main.js"></script>
+    </body>
+</html>
