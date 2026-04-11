@@ -23,6 +23,10 @@ p {
   hyphens: auto;
 }
 
+p#instructions {
+  margin: 1em 2em;
+}
+
 p#status {
   font-size: 14pt;
   font-weight: bold;
