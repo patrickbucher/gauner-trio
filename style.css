@@ -49,14 +49,11 @@ div#cards {
   margin-top: 1em;
   display: flex;
   flex-wrap: wrap;
-}
-
-div.turn {
+  justify-content: space-between;
 }
 
 div.card {
   display: flex;
-  margin: 10px;
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
@@ -83,7 +80,7 @@ p.matches {
   font-size: 16pt;
   border-radius: 5px;
   border: 1px solid grey;
-  margin-bottom: 1em;
+  margin: 0.5em auto 1em auto;
 }
 
 p.matches-0 {
