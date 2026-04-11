@@ -54,12 +54,13 @@ const nChooseK = (elements, k) => {
 };
 
 const createPortraits = (card, nMatches) => {
+  const wrap = document.createElement("div");
   const div = document.createElement("div");
+  wrap.setAttribute("class", "turn");
   div.setAttribute("class", "card");
   const matches = document.createElement("p");
-  matches.setAttribute("class", "matches");
-  matches.innerHTML = `<strong>${nMatches}</strong> Treffer`;
-  div.appendChild(matches);
+  matches.innerHTML = `<strong>${nMatches}</strong>`;
+  matches.setAttribute("class", `matches matches-${nMatches}`);
   for (let scoundrel of card) {
     const portrait = document.createElement("div");
     const img = document.createElement("img");
@@ -73,7 +74,9 @@ const createPortraits = (card, nMatches) => {
     portrait.appendChild(p);
     div.appendChild(portrait);
   }
-  return div;
+  wrap.appendChild(div);
+  wrap.appendChild(matches);
+  return wrap;
 };
 
 const cards = nChooseK(Object.keys(scoundrels), nOffenders);

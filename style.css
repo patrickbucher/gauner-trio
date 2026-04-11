@@ -47,10 +47,15 @@ div#controls button {
 
 div#cards {
   margin-top: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.turn {
 }
 
 div.card {
-  float: left;
+  display: flex;
   margin: 10px;
   border: 1px solid black;
   padding: 5px;
@@ -67,6 +72,28 @@ div.card p.caption {
 }
 
 div.portrait {
-  float: left;
-  width: 1g0px;
+  width: 180px;
+}
+
+p.matches {
+  text-align: center;
+  color: white;
+  width: 2em;
+  margin: 0 auto;
+  font-size: 16pt;
+  border-radius: 5px;
+  border: 1px solid grey;
+  margin-bottom: 1em;
+}
+
+p.matches-0 {
+  background-color: red;
+}
+
+p.matches-1 {
+  background-color: orange;
+}
+
+p.matches-2 {
+  background-color: green;
 }
