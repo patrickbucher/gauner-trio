@@ -4,6 +4,7 @@ body {
   margin: 1em auto;
   padding: 0 1em;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 th {
@@ -29,6 +30,19 @@ p#status {
   padding: 0.5em;
   border-radius: 10px;
   text-align: center;
+}
+
+div#controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+div#controls button {
+  border: 1px solid black;
+  font-size: 14pt;
+  border-radius: 5px;
+  width: 10em;
+  height: 2.5em;
 }
 
 div#cards {

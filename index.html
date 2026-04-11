@@ -8,7 +8,7 @@
   <body>
     <h1>Gauner Trio</h1>
     <h2>Welche drei Ganoven haben das Verbrechen begangen?</h2>
-    <p>
+    <p id="instructions">
       Ein Augenzeuge hat drei Ganoven dabei beobachtet, wie sie ein Verbrechen
       begangen haben. Unter den Verdächtigen sind
       <strong>sieben</strong> Serientäter. Legen Sie dem Augenzeugen
@@ -17,19 +17,19 @@
       auf der Karte wieder erkennt. Wie viele Hinweise benötigen Sie, um die
       Halunken zu überführen?
     </p>
-    <div>
-      <table id="scoundrels">
-        <tr>
-          <th>Verdächtiger</th>
-          <th>schuldig</th>
-          <th>unklar</th>
-          <th>unschuldig</th>
-        </tr>
-      </table>
-      <p id="status">
-        Klicken Sie auf <em>Anklagen</em>, sobald Sie die drei Schuldigen
-        gefunden haben!
-      </p>
+    <table id="scoundrels">
+      <tr>
+        <th>Verdächtiger</th>
+        <th>schuldig</th>
+        <th>unklar</th>
+        <th>unschuldig</th>
+      </tr>
+    </table>
+    <p id="status">
+      Klicken Sie auf <em>Anklagen</em>, sobald Sie die drei Schuldigen gefunden
+      haben!
+    </p>
+    <div id="controls">
       <button id="new-game">Neues Spiel</button>
       <button id="accuse">Anklagen</button>
       <button id="next-card">Nächste Karte</button>
