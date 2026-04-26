@@ -27,4 +27,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
       matchDiv.appendChild(button);
     }
   }
+
+  // <br> between first name and last name
+  const captions = document.querySelectorAll("p.caption");
+  for (const caption of captions) {
+    const wrapped = caption.innerHTML.split(" ").join("<br>");
+    console.log(wrapped);
+    caption.innerHTML = wrapped;
+  }
 });

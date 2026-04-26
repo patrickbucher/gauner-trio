@@ -1,19 +1,21 @@
 div.card {
-  margin-bottom: 0.1cm;
-}
-
-div.turn p.matches {
-  display: none !important;
-}
-
-div#buttons {
-  margin-top: 1em;
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  width: 15cm;
+  height: 7.5cm;
+  background-color: black;
+  justify-content: space-around;
+  padding-top: 7px;
+  margin-bottom: 1cm;
 }
 
 p.matches {
-  margin: 0.1cm;
-  display: inline-block;
+  display: none;
+}
+
+p.caption {
+  font-family: "ELEGANT TYPEWRITER", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 18pt;
+  font-weight: bold;
 }
