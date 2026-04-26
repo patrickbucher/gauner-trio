@@ -8,14 +8,40 @@ div.card {
   margin-bottom: 1cm;
 }
 
-p.matches {
-  display: none;
-}
-
 p.caption {
   font-family: "ELEGANT TYPEWRITER", sans-serif;
   color: white;
   text-align: center;
   font-size: 18pt;
   font-weight: bold;
+}
+
+p.matches {
+  display: inline-block;
+}
+
+.turn .matches {
+  display: none;
+}
+
+p.matches {
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  width: 2em;
+  margin: 0 auto;
+  font-size: 18pt;
+  border: 2px solid white;
+}
+
+p.matches-0 {
+  background-color: red;
+}
+
+p.matches-1 {
+  background-color: orange;
+}
+
+p.matches-2 {
+  background-color: green;
 }
